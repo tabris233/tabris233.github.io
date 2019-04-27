@@ -481,6 +481,9 @@ deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe m
 
 </code></pre><h1 id="git"><a href="#git" class="headerlink" title="git"></a>git</h1><pre class=" language-shell"><code class="language-shell">git config --global http.proxy 'socks5://127.0.0.1:1080'
 </code></pre>
+<h3 id="git-设置不用每次输入帐号密码"><a href="#git-设置不用每次输入帐号密码" class="headerlink" title="git 设置不用每次输入帐号密码"></a>git 设置不用每次输入帐号密码</h3><p>执行一下 这个命令：</p>
+<p><code>git config --global credential.helper store</code></p>
+<p>然后，下次再输入一次 账号密码 就可以了。</p>
 <h1 id="pip"><a href="#pip" class="headerlink" title="pip"></a>pip</h1><p><strong>pip国内的一些镜像</strong></p>
 <ul>
 <li>阿里云 <a href="http://mirrors.aliyun.com/pypi/simple/" target="_blank" rel="noopener">http://mirrors.aliyun.com/pypi/simple/</a> </li>
@@ -518,35 +521,29 @@ $ gem install rails
 <pre class=" language-json"><code class="language-json"><span class="token punctuation">{</span>
     <span class="token property">"registry-mirrors"</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"https://oj7znbfj.mirror.aliyuncs.com"</span><span class="token punctuation">]</span>
 <span class="token punctuation">}</span>
-
 </code></pre>
 <h1 id="npm"><a href="#npm" class="headerlink" title="npm"></a>npm</h1><p>安装node.js后，现在的node.js已经自带了npm工具了，但是国外的源很慢，为了解决这个问题，同时使用cnpm替换npm，我们通过切换源，切换到国内淘宝的源中。下面是我的操作过程。简单记录便于以后自己查看。</p>
 <ol>
 <li><p>查看npm版本</p>
 <pre class=" language-shell"><code class="language-shell">npm -v
-
 </code></pre>
 </li>
 <li><p>升级npm版本</p>
 <pre class=" language-shell"><code class="language-shell">npm update
-
 </code></pre>
 </li>
 <li><p>查看npm配置</p>
 <pre class=" language-shell"><code class="language-shell">npm config list
-
 </code></pre>
 </li>
 <li><p>更换源配置</p>
 <pre class=" language-shell"><code class="language-shell">npm config set registry https://registry.npm.taobao.org
 npm config list / npm config get registery #检查是否替换成功
-
 </code></pre>
 </li>
 <li><p>安装cnpm插件</p>
 <pre class=" language-shell"><code class="language-shell">npm install -g cnpm --registry=https://registry.npm.taobao.org
 cnpm -v
-
 </code></pre>
 </li>
 <li><p>安装包测试</p>
