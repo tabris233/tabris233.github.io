@@ -18,13 +18,24 @@ node_js:
 #branches:
 #  only:
 #  - blog-source
+install:
+  - npm install hexo-cli -g
+  - npm install 
+  - npm i -S hexo-prism-plugin
+  - npm install hexo-generator-search --save
+  - npm i hexo-permalink-pinyin --save
+  - npm i --save hexo-wordcount
+  - npm install hexo-generator-feed --save
 
-script: ./node_modules/.bin/hexo clean && ./node_modules/.bin/hexo generate
+script:
+  - ./node_modules/.bin/hexo clean 
+  - ./node_modules/.bin/hexo generate
 
 deploy:
   # deploy to github pages
   provider: pages
   skip_cleanup: true
+  keep_history: true
   target_branch: master
   github_token: github-token # $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   repo: tabris233/tabris233.github.io
