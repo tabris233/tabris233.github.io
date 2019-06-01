@@ -1,0 +1,43 @@
+
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+#  keep_history: true
+#  on:
+#    branch: master
+
+
+
+# safelist
+language: node_js
+
+node_js:
+  - "8"
+
+#branches:
+#  only:
+#  - blog-source
+
+script: ./node_modules/.bin/hexo clean && ./node_modules/.bin/hexo generate
+
+deploy:
+  # deploy to github pages
+  provider: pages
+  skip_cleanup: true
+  target_branch: master
+  github_token: github-token # $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  repo: tabris233/tabris233.github.io
+  local_dir: public
+  on:
+    branch: blog-source
+
+# 部署之后通过sftp 远程传输到其他机器
+#after_deploy:
+#  - node deploy/sftp.js $SERVER_PASSWORD<Paste>
+
+# .travis.yml 配置
+cache:
+  directories:
+    - node_modules
+
