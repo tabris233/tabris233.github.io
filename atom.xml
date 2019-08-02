@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://tabris.top/"/>
-  <updated>2019-08-02T02:42:48.152Z</updated>
+  <updated>2019-08-02T02:52:04.139Z</updated>
   <id>http://tabris.top/</id>
   
   <author>
@@ -17,11 +17,33 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>test travis-ci</title>
+    <link href="http://tabris.top/2019/08/02/test-travis/"/>
+    <id>http://tabris.top/2019/08/02/test-travis/</id>
+    <published>2019-08-02T10:48:15.000Z</published>
+    <updated>2019-08-02T02:52:04.139Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;test-travis-ci&quot;&gt;&lt;a href=&quot;#test-travis-ci&quot; class=&quot;headerlink&quot; title=&quot;test travis-ci&quot;&gt;&lt;/a&gt;test
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>csdn博文迁移至hexo心路历程</title>
     <link href="http://tabris.top/2019/04/18/csdn2hexo/"/>
     <id>http://tabris.top/2019/04/18/csdn2hexo/</id>
     <published>2019-04-18T18:16:15.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -46,7 +68,7 @@
     <link href="http://tabris.top/2019/04/14/changesource/"/>
     <id>http://tabris.top/2019/04/14/changesource/</id>
     <published>2019-04-14T10:59:03.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -74,7 +96,7 @@
     <link href="http://tabris.top/2019/03/11/vim/"/>
     <id>http://tabris.top/2019/03/11/vim/</id>
     <published>2019-03-11T15:33:11.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -94,7 +116,7 @@
     <link href="http://tabris.top/2019/01/10/studydocker/"/>
     <id>http://tabris.top/2019/01/10/studydocker/</id>
     <published>2019-01-10T17:21:03.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -118,7 +140,7 @@
     <link href="http://tabris.top/2018/11/18/designpattern/"/>
     <id>http://tabris.top/2018/11/18/designpattern/</id>
     <published>2018-11-18T21:06:08.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -146,7 +168,7 @@
     <link href="http://tabris.top/2018/11/18/productpattern/"/>
     <id>http://tabris.top/2018/11/18/productpattern/</id>
     <published>2018-11-18T12:44:08.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -174,7 +196,7 @@
     <link href="http://tabris.top/2018/09/23/studylinux-arch/"/>
     <id>http://tabris.top/2018/09/23/studylinux-arch/</id>
     <published>2018-09-23T17:21:03.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -194,7 +216,7 @@
     <link href="http://tabris.top/2018/09/23/graduationproject/"/>
     <id>http://tabris.top/2018/09/23/graduationproject/</id>
     <published>2018-09-23T15:33:11.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -221,7 +243,7 @@
     <link href="http://tabris.top/2018/03/17/manualofregex/"/>
     <id>http://tabris.top/2018/03/17/manualofregex/</id>
     <published>2018-03-17T16:15:41.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -247,7 +269,7 @@
     <link href="http://tabris.top/2018/03/07/notesofpython/"/>
     <id>http://tabris.top/2018/03/07/notesofpython/</id>
     <published>2018-03-07T20:12:11.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -275,7 +297,7 @@
     <link href="http://tabris.top/2018/01/31/experienceofinterview/"/>
     <id>http://tabris.top/2018/01/31/experienceofinterview/</id>
     <published>2018-01-31T15:56:08.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -312,7 +334,7 @@
     <link href="http://tabris.top/2018/01/29/studyofinterview/"/>
     <id>http://tabris.top/2018/01/29/studyofinterview/</id>
     <published>2018-01-29T12:44:08.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -349,7 +371,7 @@
     <link href="http://tabris.top/2018/01/28/79186055/"/>
     <id>http://tabris.top/2018/01/28/79186055/</id>
     <published>2018-01-28T13:00:52.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -373,7 +395,7 @@
     <link href="http://tabris.top/2018/01/25/hello-world/"/>
     <id>http://tabris.top/2018/01/25/hello-world/</id>
     <published>2018-01-25T21:00:08.000Z</published>
-    <updated>2019-08-02T02:42:48.152Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -399,7 +421,7 @@
     <link href="http://tabris.top/2017/12/31/internshipsummary/"/>
     <id>http://tabris.top/2017/12/31/internshipsummary/</id>
     <published>2017-12-31T00:00:00.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -425,7 +447,7 @@
     <link href="http://tabris.top/2017/11/08/78479380/"/>
     <id>http://tabris.top/2017/11/08/78479380/</id>
     <published>2017-11-08T15:31:29.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -449,7 +471,7 @@
     <link href="http://tabris.top/2017/10/08/78175188/"/>
     <id>http://tabris.top/2017/10/08/78175188/</id>
     <published>2017-10-08T15:24:34.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -477,7 +499,7 @@
     <link href="http://tabris.top/2017/09/21/codeforces-794f/"/>
     <id>http://tabris.top/2017/09/21/codeforces-794f/</id>
     <published>2017-09-21T16:44:51.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -505,7 +527,7 @@
     <link href="http://tabris.top/2017/09/21/78053974/"/>
     <id>http://tabris.top/2017/09/21/78053974/</id>
     <published>2017-09-21T16:44:50.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
+    <updated>2019-08-02T02:52:04.139Z</updated>
     
     <summary type="html">
     
@@ -514,30 +536,6 @@
         
         
           &lt;h1 id=&quot;Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;&gt;&lt;a href=&quot;#Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;
-        
-      
-    
-    </summary>
-    
-      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>&lt;原&gt;#  hdu 6134 Battlestation Operational [反演]【数学】</title>
-    <link href="http://tabris.top/2017/08/18/77349012/"/>
-    <id>http://tabris.top/2017/08/18/77349012/</id>
-    <published>2017-08-18T01:01:18.000Z</published>
-    <updated>2019-08-02T02:42:48.148Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;h1 id=&quot;hdu-6134-Battlestation-Operational-反演-【数学】&quot;&gt;&lt;a href=&quot;#hdu-6134-Battlestation-Operational-反演-【数学】&quot; class=&quot;headerlink&quot; title=&quot;hdu
         
       
     
