@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>tabris的博客</title>
+  
+  <subtitle>IT互联网</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://tabris.top/"/>
+  <updated>2019-08-02T02:42:48.152Z</updated>
+  <id>http://tabris.top/</id>
+  
+  <author>
+    <name>tabris</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>csdn博文迁移至hexo心路历程</title>
+    <link href="http://tabris.top/2019/04/18/csdn2hexo/"/>
+    <id>http://tabris.top/2019/04/18/csdn2hexo/</id>
+    <published>2019-04-18T18:16:15.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;  某天我之前的&lt;code&gt;hexo&lt;/code&gt;主题被自己玩坏了, 决定换一个主题,&lt;/p&gt;
+&lt;p&gt;  同时突然想把之前&lt;code&gt;CSDN&lt;/code&gt;博文迁移进来,CSDN这个网站是越来越傻逼了.&lt;/p&gt;
+&lt;p&gt;  最终选择了&lt;a
+        
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>主流应用换源or镜像加速</title>
+    <link href="http://tabris.top/2019/04/14/changesource/"/>
+    <id>http://tabris.top/2019/04/14/changesource/</id>
+    <published>2019-04-14T10:59:03.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      应用换源
+    
+    </summary>
+    
+      <category term="实用技能" scheme="http://tabris.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="linux" scheme="http://tabris.top/tags/linux/"/>
+    
+      <category term="git" scheme="http://tabris.top/tags/git/"/>
+    
+      <category term="ruby" scheme="http://tabris.top/tags/ruby/"/>
+    
+      <category term="docker" scheme="http://tabris.top/tags/docker/"/>
+    
+      <category term="npm" scheme="http://tabris.top/tags/npm/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim使用心得</title>
+    <link href="http://tabris.top/2019/03/11/vim/"/>
+    <id>http://tabris.top/2019/03/11/vim/</id>
+    <published>2019-03-11T15:33:11.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      tabris的vim使用心得
+    
+    </summary>
+    
+      <category term="实用技能" scheme="http://tabris.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="editor" scheme="http://tabris.top/tags/editor/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>StudyDocker</title>
+    <link href="http://tabris.top/2019/01/10/studydocker/"/>
+    <id>http://tabris.top/2019/01/10/studydocker/</id>
+    <published>2019-01-10T17:21:03.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      Docker 轻量级虚拟化
+    
+    </summary>
+    
+      <category term="实用技能" scheme="http://tabris.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="docker" scheme="http://tabris.top/tags/docker/"/>
+    
+      <category term="Linux" scheme="http://tabris.top/tags/Linux/"/>
+    
+      <category term="虚拟化" scheme="http://tabris.top/tags/%E8%99%9A%E6%8B%9F%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>设计模式</title>
+    <link href="http://tabris.top/2018/11/18/designpattern/"/>
+    <id>http://tabris.top/2018/11/18/designpattern/</id>
+    <published>2018-11-18T21:06:08.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;学习下设计模式&lt;/p&gt;
+&lt;p&gt;参考&lt;a href=&quot;http://www.runoob.com/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软工" scheme="http://tabris.top/categories/%E8%BD%AF%E5%B7%A5/"/>
+    
+    
+      <category term="开发" scheme="http://tabris.top/tags/%E5%BC%80%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>工厂模式.</title>
+    <link href="http://tabris.top/2018/11/18/productpattern/"/>
+    <id>http://tabris.top/2018/11/18/productpattern/</id>
+    <published>2018-11-18T12:44:08.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;&lt;a href=&quot;http://www.runoob.com/design-pattern/abstract-factory-pattern.html&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="软工" scheme="http://tabris.top/categories/%E8%BD%AF%E5%B7%A5/"/>
+    
+    
+      <category term="面试" scheme="http://tabris.top/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="设计模式" scheme="http://tabris.top/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>StudyLinux----arch</title>
+    <link href="http://tabris.top/2018/09/23/studylinux-arch/"/>
+    <id>http://tabris.top/2018/09/23/studylinux-arch/</id>
+    <published>2018-09-23T17:21:03.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      Arch 作为&#39;最难&#39;安装的linux系统  通过它可以更好的了解linux
+    
+    </summary>
+    
+      <category term="实用技能" scheme="http://tabris.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="Linux" scheme="http://tabris.top/tags/Linux/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GraduationProject</title>
+    <link href="http://tabris.top/2018/09/23/graduationproject/"/>
+    <id>http://tabris.top/2018/09/23/graduationproject/</id>
+    <published>2018-09-23T15:33:11.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;在这里记录一下我的毕业设计&lt;br&gt;链接在&lt;a href=&quot;https://github.com/tabris233/GraduationProject&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="项目" scheme="http://tabris.top/categories/%E9%A1%B9%E7%9B%AE/"/>
+    
+    
+      <category term="毕业设计" scheme="http://tabris.top/tags/%E6%AF%95%E4%B8%9A%E8%AE%BE%E8%AE%A1/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>正则表达式手册</title>
+    <link href="http://tabris.top/2018/03/17/manualofregex/"/>
+    <id>http://tabris.top/2018/03/17/manualofregex/</id>
+    <published>2018-03-17T16:15:41.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;表达式全集&quot;&gt;&lt;a href=&quot;#表达式全集&quot; class=&quot;headerlink&quot; title=&quot;表达式全集&quot;&gt;&lt;/a&gt;表达式全集&lt;/h1&gt;&lt;p&gt;由于hexo的markdown的引擎太烂了  这里的格式会乱点&lt;br&gt;有时间在换一个好一点的引擎  
+        
+      
+    
+    </summary>
+    
+      <category term="实用技能" scheme="http://tabris.top/categories/%E5%AE%9E%E7%94%A8%E6%8A%80%E8%83%BD/"/>
+    
+    
+      <category term="正则表达式" scheme="http://tabris.top/tags/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python学习笔记</title>
+    <link href="http://tabris.top/2018/03/07/notesofpython/"/>
+    <id>http://tabris.top/2018/03/07/notesofpython/</id>
+    <published>2018-03-07T20:12:11.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;抄写了两个Spider,发现对于Python基础的掌握实在是差劲的可以.&lt;/p&gt;
+&lt;p&gt;于是乎 过来补补基础&lt;/p&gt;
+&lt;p&gt;一直在&lt;a href=&quot;https://www.hackerrank.com/&quot; target=&quot;_blank&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="编程语言" scheme="http://tabris.top/categories/%E7%BC%96%E7%A8%8B%E8%AF%AD%E8%A8%80/"/>
+    
+    
+      <category term="python" scheme="http://tabris.top/tags/python/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试经历.</title>
+    <link href="http://tabris.top/2018/01/31/experienceofinterview/"/>
+    <id>http://tabris.top/2018/01/31/experienceofinterview/</id>
+    <published>2018-01-31T15:56:08.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;总结下所有的面试, 这样才能&lt;strong&gt;慢慢&lt;/strong&gt;进步呀,,,,&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;哈尔滨某小公司-C-岗实习-现场面-offer&quot;&gt;&lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="求职" scheme="http://tabris.top/categories/%E6%B1%82%E8%81%8C/"/>
+    
+    
+      <category term="面试" scheme="http://tabris.top/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="C++" scheme="http://tabris.top/tags/C/"/>
+    
+      <category term="数据库" scheme="http://tabris.top/tags/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+      <category term="操作系统" scheme="http://tabris.top/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="计算机网络" scheme="http://tabris.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>面试学习.</title>
+    <link href="http://tabris.top/2018/01/29/studyofinterview/"/>
+    <id>http://tabris.top/2018/01/29/studyofinterview/</id>
+    <published>2018-01-29T12:44:08.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;记录下我针对面试的学习&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;算法-编程题&quot;&gt;&lt;a href=&quot;#算法-编程题&quot; class=&quot;headerlink&quot; title=&quot;算法/编程题&quot;&gt;&lt;/a&gt;算法/编程题&lt;/h2&gt;&lt;h3
+        
+      
+    
+    </summary>
+    
+      <category term="求职" scheme="http://tabris.top/categories/%E6%B1%82%E8%81%8C/"/>
+    
+    
+      <category term="面试" scheme="http://tabris.top/tags/%E9%9D%A2%E8%AF%95/"/>
+    
+      <category term="C++" scheme="http://tabris.top/tags/C/"/>
+    
+      <category term="操作系统" scheme="http://tabris.top/tags/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+      <category term="计算机网络" scheme="http://tabris.top/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/"/>
+    
+      <category term="大数据" scheme="http://tabris.top/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  goodbye CSDN</title>
+    <link href="http://tabris.top/2018/01/28/79186055/"/>
+    <id>http://tabris.top/2018/01/28/79186055/</id>
+    <published>2018-01-28T13:00:52.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;goodbye-CSDN&quot;&gt;&lt;a href=&quot;#goodbye-CSDN&quot; class=&quot;headerlink&quot; title=&quot;goodbye CSDN&quot;&gt;&lt;/a&gt;goodbye CSDN&lt;/h1&gt;&lt;p&gt;2018年01月28日 13:00:52  &lt;a
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://tabris.top/2018/01/25/hello-world/"/>
+    <id>http://tabris.top/2018/01/25/hello-world/</id>
+    <published>2018-01-25T21:00:08.000Z</published>
+    <updated>2019-08-02T02:42:48.152Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Hello-World&quot;&gt;&lt;a href=&quot;#Hello-World&quot; class=&quot;headerlink&quot; title=&quot;Hello World&quot;&gt;&lt;/a&gt;Hello
+        
+      
+    
+    </summary>
+    
+      <category term="随笔" scheme="http://tabris.top/categories/%E9%9A%8F%E7%AC%94/"/>
+    
+    
+      <category term="随笔" scheme="http://tabris.top/tags/%E9%9A%8F%E7%AC%94/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>InternshipSummary</title>
+    <link href="http://tabris.top/2017/12/31/internshipsummary/"/>
+    <id>http://tabris.top/2017/12/31/internshipsummary/</id>
+    <published>2017-12-31T00:00:00.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h2 id=&quot;Internship-Summary&quot;&gt;&lt;a href=&quot;#Internship-Summary&quot; class=&quot;headerlink&quot; title=&quot;Internship Summary&quot;&gt;&lt;/a&gt;Internship
+        
+      
+    
+    </summary>
+    
+      <category term="工作" scheme="http://tabris.top/categories/%E5%B7%A5%E4%BD%9C/"/>
+    
+    
+      <category term="实习" scheme="http://tabris.top/tags/%E5%AE%9E%E4%B9%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  退役贴</title>
+    <link href="http://tabris.top/2017/11/08/78479380/"/>
+    <id>http://tabris.top/2017/11/08/78479380/</id>
+    <published>2017-11-08T15:31:29.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;退役贴&quot;&gt;&lt;a href=&quot;#退役贴&quot; class=&quot;headerlink&quot; title=&quot;退役贴&quot;&gt;&lt;/a&gt;退役贴&lt;/h1&gt;&lt;p&gt;2017年11月08日 15:31:29  &lt;a href=&quot;https://me.csdn.net/qq_33184171&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  vijos P2026 几乎奇偶等和数 [数位dp]【动态规划】</title>
+    <link href="http://tabris.top/2017/10/08/78175188/"/>
+    <id>http://tabris.top/2017/10/08/78175188/</id>
+    <published>2017-10-08T15:24:34.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;vijos-P2026-几乎奇偶等和数-数位dp-【动态规划】&quot;&gt;&lt;a href=&quot;#vijos-P2026-几乎奇偶等和数-数位dp-【动态规划】&quot; class=&quot;headerlink&quot; title=&quot;vijos P2026 几乎奇偶等和数
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+      <category term="动态规划" scheme="http://tabris.top/tags/%E5%8A%A8%E6%80%81%E8%A7%84%E5%88%92/"/>
+    
+      <category term="各OJ" scheme="http://tabris.top/tags/%E5%90%84OJ/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  Codeforces 794F</title>
+    <link href="http://tabris.top/2017/09/21/codeforces-794f/"/>
+    <id>http://tabris.top/2017/09/21/codeforces-794f/</id>
+    <published>2017-09-21T16:44:51.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;&gt;&lt;a href=&quot;#Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+      <category term="Typora" scheme="http://tabris.top/tags/Typora/"/>
+    
+      <category term="Markdown" scheme="http://tabris.top/tags/Markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  Codeforces 794F - Leha and security system [线段树-区间更新]【数据结构】</title>
+    <link href="http://tabris.top/2017/09/21/78053974/"/>
+    <id>http://tabris.top/2017/09/21/78053974/</id>
+    <published>2017-09-21T16:44:50.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;&gt;&lt;a href=&quot;#Codeforces-794F-Leha-and-security-system-线段树-区间更新-【数据结构】&quot;
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>&lt;原&gt;#  hdu 6134 Battlestation Operational [反演]【数学】</title>
+    <link href="http://tabris.top/2017/08/18/77349012/"/>
+    <id>http://tabris.top/2017/08/18/77349012/</id>
+    <published>2017-08-18T01:01:18.000Z</published>
+    <updated>2019-08-02T02:42:48.148Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;h1 id=&quot;hdu-6134-Battlestation-Operational-反演-【数学】&quot;&gt;&lt;a href=&quot;#hdu-6134-Battlestation-Operational-反演-【数学】&quot; class=&quot;headerlink&quot; title=&quot;hdu
+        
+      
+    
+    </summary>
+    
+      <category term="OJ算法题" scheme="http://tabris.top/categories/OJ%E7%AE%97%E6%B3%95%E9%A2%98/"/>
+    
+    
+  </entry>
+  
+</feed>
