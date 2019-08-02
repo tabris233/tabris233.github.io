@@ -1,0 +1,1726 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head><meta name="generator" content="Hexo 3.9.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="&lt;原&gt;#  图论 [未完成 待续~待修改], tabris的博客">
+    <meta name="description" content="图论 [未完成 待续~待修改]置顶  2017年01月26日 21:45:01   Tabris_  阅读数：435
+
+ 博客爬取于2019-04-18 17:15:09以下为正文
+版权声明：本文为Tabris原创文章，未经博主允许不得私自">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>&lt;原&gt;#  图论 [未完成 待续~待修改] | tabris的博客</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+    <style type="text/css">
+        
+    </style>
+
+    <script src="/libs/jquery/jquery-2.2.0.min.js"></script>
+<link rel="stylesheet" href="/css/prism-duotone-space.css" type="text/css"></head>
+
+
+<body>
+
+<header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">tabris的博客</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fa fa-navicon"></i></a>
+<ul class="right">
+    
+    <li class="hide-on-med-and-down">
+        <a href="/" class="waves-effect waves-light">
+            
+            <i class="fa fa-home"></i>
+            
+            <span>首页</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/tags" class="waves-effect waves-light">
+            
+            <i class="fa fa-tags"></i>
+            
+            <span>标签</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/categories" class="waves-effect waves-light">
+            
+            <i class="fa fa-bookmark"></i>
+            
+            <span>分类</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/archives" class="waves-effect waves-light">
+            
+            <i class="fa fa-archive"></i>
+            
+            <span>归档</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/about" class="waves-effect waves-light">
+            
+            <i class="fa fa-user-circle-o"></i>
+            
+            <span>关于</span>
+        </a>
+    </li>
+    
+    <li class="hide-on-med-and-down">
+        <a href="/friends" class="waves-effect waves-light">
+            
+            <i class="fa fa-address-book"></i>
+            
+            <span>友情链接</span>
+        </a>
+    </li>
+    
+    <li>
+        <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+            <i id="searchIcon" class="fa fa-search" title="搜索"></i>
+        </a>
+    </li>
+</ul>
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">tabris的博客</div>
+        <div class="logo-desc">
+            
+            With the low level of hard work of most people, there is no chance to fight for talent.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li>
+            <a href="/" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-home"></i>
+                
+                首页
+            </a>
+        </li>
+        
+        <li>
+            <a href="/tags" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-tags"></i>
+                
+                标签
+            </a>
+        </li>
+        
+        <li>
+            <a href="/categories" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-bookmark"></i>
+                
+                分类
+            </a>
+        </li>
+        
+        <li>
+            <a href="/archives" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-archive"></i>
+                
+                归档
+            </a>
+        </li>
+        
+        <li>
+            <a href="/about" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-user-circle-o"></i>
+                
+                关于
+            </a>
+        </li>
+        
+        <li>
+            <a href="/friends" class="waves-effect waves-light">
+                
+                <i class="fa fa-fw fa-address-book"></i>
+                
+                友情链接
+            </a>
+        </li>
+        
+        
+    </ul>
+</div>
+
+        </div>
+
+        
+    </nav>
+
+</header>
+
+
+<script src="/libs/cryptojs/crypto-js.min.js"></script>
+<script>
+    (function() {
+        let pwd = '';
+        if (pwd && pwd.length > 0) {
+            if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
+                alert('密码错误，将返回主页！');
+                location.href = '/';
+            }
+        }
+    })();
+</script>
+
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/22.jpg')">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <div class="description center-align post-title">
+                        &lt;原&gt;#  图论 [未完成 待续~待修改]
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        margin: 35px 0 15px 0;
+        padding-left: 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #toc-content .is-active-link::before {
+        background-color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 20px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fa fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/OJ算法题/" class="post-category" target="_blank">
+                                OJ算法题
+                            </a>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                <div class="post-date info-break-policy">
+                    <i class="fa fa-calendar-minus-o fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2017-01-26
+                </div>
+
+                
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-file-word-o fa-fw"></i>文章字数:&nbsp;&nbsp;
+                        3.1k
+                    </div>
+                    
+
+                    
+                    <div class="info-break-policy">
+                        <i class="fa fa-clock-o fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                        15 分
+                    </div>
+                    
+                
+				
+				
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="fa fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="图论-未完成-待续-待修改"><a href="#图论-未完成-待续-待修改" class="headerlink" title="图论 [未完成 待续~待修改]"></a>图论 [未完成 待续~待修改]</h1><p>置顶  2017年01月26日 21:45:01  <a href="https://me.csdn.net/qq_33184171" target="_blank" rel="noopener"> Tabris_ </a> 阅读数：435</p>
+<hr>
+<p> 博客爬取于<code>2019-04-18 17:15:09</code><br><strong><em>以下为正文</em></strong></p>
+<p>版权声明：本文为Tabris原创文章，未经博主允许不得私自转载。<br><a href="https://blog.csdn.net/qq_33184171/article/details/54746580" target="_blank" rel="noopener">https://blog.csdn.net/qq_33184171/article/details/54746580</a></p>
+<h1 id="图"><a href="#图" class="headerlink" title="图"></a>图</h1><h2 id="图的表示方法"><a href="#图的表示方法" class="headerlink" title="图的表示方法"></a>图的表示方法</h2><h3 id="矩阵"><a href="#矩阵" class="headerlink" title="矩阵"></a>矩阵</h3><p>二维数组 map[i][j] 表示i到j的边 值为边得大小 ,定义一个值代表不存在这条边 一般为0<br>空间复杂度  O  (  n  2  )</p>
+<h3 id="vector"><a href="#vector" class="headerlink" title="vector"></a>vector</h3><p>vectorG[N];<br>G[i][j] 表示有一条i-&gt;j的有向边</p>
+<pre><code>void add(int u,int v){
+    G[u].push_back(v);
+}
+</code></pre><p>空间复杂度  O  (  e  )</p>
+<h3 id="前向星"><a href="#前向星" class="headerlink" title="前向星"></a>前向星</h3><pre><code>struct edge{
+    int to,next,w;
+}G[N&lt;&lt;1];
+int head[N],tot;
+void add(int u,int v,int w){
+    G[tot].w=w,G[tot].to=v,G[tot].next=head[u],head[u]=tot++;
+}
+</code></pre><p>空间复杂度  O  (  e  )</p>
+<h2 id="最短路"><a href="#最短路" class="headerlink" title="最短路"></a>最短路</h2><h3 id="floyd"><a href="#floyd" class="headerlink" title="floyd"></a>floyd</h3><p>不解释</p>
+<h3 id="dijkstra"><a href="#dijkstra" class="headerlink" title="dijkstra"></a>dijkstra</h3><pre><code>vector&lt;pair&lt;int ,int &gt; &gt;G[N];
+int d[N];
+
+int main(){
+
+    while(~scanf(&quot;%d%d&quot;,&amp;m,&amp;n)){
+        for(int i=1;i&lt;=n;i++)d[i]=2e9+7,G[i].clear();
+        d[n]=0;
+        for(int i=1,u,v,w;i&lt;=m;i++){
+            scanf(&quot;%d%d%d&quot;,&amp;u,&amp;v,&amp;w);
+            G[u].push_back(make_pair(v,w));
+            G[v].push_back(make_pair(u,w));
+        }
+
+        priority_queue&lt;pair&lt;int ,int&gt; &gt;q;
+        q.push(make_pair(-d[n],n));
+        while(!q.empty()){
+            int u =q.top().second;q.pop();
+            for(int i=0,v;i&lt;G[u].size();i++){
+                v=G[u][i].first;
+                if(d[v]&gt;d[u]+G[u][i].second){
+                    d[v]=d[u]+G[u][i].second;
+                    q.push(make_pair(-d[v],v));
+                }
+            }
+
+        }
+        if(d[n]==2e9+7) puts(&quot;-1&quot;);
+        else            printf(&quot;%d\n&quot;,d[1]);
+
+    }
+    return 0;
+}
+</code></pre><h3 id="SPFA"><a href="#SPFA" class="headerlink" title="SPFA"></a>SPFA</h3><pre><code>LL d[N];
+int inq[N],n,m,q;
+LL spfa(int s,int t){
+    for(int i=1;i&lt;=n;i++) d[i]=2e14+7,inq[i]=0;
+
+    queue&lt;int &gt;q;
+    q.push(s);d[s]=0,inq[s]=1;
+    while(!q.empty()){
+        int u =q.front();q.pop();
+        inq[u]=0;
+        for(int i=head[u],v;i!=-1;i=G[i].next){
+            v=G[i].to;
+            if(d[v]&gt;d[u]+G[i].w){
+                d[v]=d[u]+G[i].w;
+                if(inq[v]==1) continue;
+                inq[v]=1;
+                q.push(v);
+            }
+        }
+    }
+
+    return d[t];
+}
+</code></pre><h2 id="强连通"><a href="#强连通" class="headerlink" title="强连通"></a>强连通</h2><pre><code>vector&lt;int&gt;G[N];
+vector&lt;pair&lt;int,int&gt; &gt;G2[N];
+
+int low[N],dfn[N],w[N],d[N];
+int vis[N],val[N];
+int color[N],cnt,tot;
+int mystack[N],len;
+
+void dfs(int u){vis[u]=1;
+    dfn[u]=low[u]=++cnt;
+    mystack[++len]=u;
+    int gz=G[u].size();
+    for(int to,i=0;i&lt;gz;i++){
+        to=G[u][i];
+        if(vis[to]==0) dfs(to);
+        if(vis[to]==1) low[u]=min(low[u],low[to]);
+    }
+
+    if(dfn[u]==low[u]){
+        ++tot;
+        do{
+            val[tot]+=w[mystack[len]];
+            color[mystack[len]]=tot;
+            vis[mystack[len]]=2;
+        }while(mystack[len--]!=u);
+    }
+}
+
+int n,m;
+int main(){
+    scanf(&quot;%d%d&quot;,&amp;n,&amp;m);
+    cnt=tot=len=0;
+    for(int i=1;i&lt;=n;i++)    scanf(&quot;%d&quot;,&amp;w[i]);
+
+    for(int i=1,u,v;i&lt;=m;i++){
+        scanf(&quot;%d%d&quot;,&amp;u,&amp;v);
+        G[u].push_back(v); //看是有向图还是无向图
+    }
+
+    //缩点
+    for(int i=1;i&lt;=n;i++)   if(vis[i]==0)dfs(i);
+
+    //建新图
+
+    for(int i=1,gz;i&lt;=n;i++){vis[i]=0,d[i]=0;
+        gz=G[i].size();
+        for(int j=0,to;j&lt;gz;j++){
+            to=G[i][j];
+            if(color[i]!=color[to])
+                G2[color[i]].push_back(make_pair(val[color[to]],color[to]));
+        }
+    }
+    return 0;
+}
+</code></pre><h2 id="二分图匹配"><a href="#二分图匹配" class="headerlink" title="二分图匹配"></a>二分图匹配</h2><p><a href="http://blog.csdn.net/pi9nc/article/details/11848327" target="_blank" rel="noopener"> 算法介绍 </a><br><strong> 最大匹配数 </strong> ：最大匹配的匹配边的数目<br><strong> 最小点覆盖数 </strong> ：选取最少的点，使任意一条边至少有一个端点被选择<br><strong> 最大独立数 </strong> ：选取最多的点，使任意所选两点均不相连<br>最小路径覆盖数：对于一个 DAG（有向无环图），选取最少条路径，使得每个顶点属于且仅属于一条路径。路径长可以为 0（即单个点）。</p>
+<p>定理1：最小点覆盖数 = 最大匹配数（这是 Konig 定理）<br>定理2：最大独立数 = 顶点数 - 最大匹配数<br>定理3：最小路径覆盖数 = 顶点数 - 最大匹配数</p>
+<p>匈牙利算法求解二分图匹配问题</p>
+<pre><code>int k,n,m;
+int match[N];
+int vis[N];
+vector&lt;int &gt;G[N];
+
+int tot,a;
+int col[N];
+//二分图染色  用来判断是不是二分图
+bool color(int s){
+    queue&lt;int&gt;q;
+    q.push(s);col[s]=1;
+    while(!q.empty()){
+        int u = q.front();q.pop();
+        tot++;
+        if(col[u]==1) a++;
+        int gz=G[u].size();
+        for(int i=0,to;i&lt;gz;i++){
+            to=G[u][i];
+            if(col[to]==0){
+                col[to]=3-col[u];
+                q.push(to);
+            }
+            else if(col[to]==col[u])
+                return false;
+        }
+    }
+    return true;
+}
+
+bool findi(int u){
+    for(int i=0;i&lt;G[u].size();i++){
+        int v=G[u][i];
+        if(vis[v]==0){
+            vis[v]=1;
+            if(match[v]==-1||findi(match[v])){
+                match[v]=u;
+                return true;
+            }
+        }
+    }
+    return false;
+}
+
+void init(){
+    memset(match,-1,sizeof(match));
+    for(int i=1;i&lt;=n;i++) G[i].clear(),col[i]=vis[i]=0;
+}
+
+void add(int u,int v){
+    G[u].push_back(v);
+    G[v].push_back(u); //无向图才需要
+}
+
+int maxMATCH(){
+    int ans = 0;  //ans 是最大匹配数,
+    for(int i=1;i&lt;=n;i++){
+        memset(vis,0,sizeof(vis));
+        if(findi(i)) ans++;
+    }
+    ans/=2;   //对于无向图的话 需要ans/=2;
+    return ans ;
+}
+
+bool perfectMATCH(){
+    if(maxMATCH()==n) return true;
+    else              return false;
+}
+
+int main(){
+    int _;
+    scanf(&quot;%d&quot;,&amp;_);
+    while(_--){
+        scanf(&quot;%d%d&quot;,&amp;n,&amp;m);
+        init();a=0;
+        for(int i=1,u,v;i&lt;=m;i++){
+            scanf(&quot;%d%d&quot;,&amp;u,&amp;v);
+            add(u,v);
+        }
+        /****
+        根据题意进行balabala
+        */
+    }
+    return 0;
+}
+</code></pre><h2 id="2-SAT"><a href="#2-SAT" class="headerlink" title="2-SAT"></a>2-SAT</h2><p><a href="http://www.cnblogs.com/shu-xiaohao/p/3537347.html" target="_blank" rel="noopener"> 强连通分支及其应用（2-SAT）总结 </a></p>
+<blockquote>
+<p>2-SAT</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>强联通分量一个很重要的用途就是解布尔方程可满足性问题（SAT）。需要学习这一部分知识我们需要一点布尔代数的知识。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>下文中我们约定（^表示交v表示并）</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>例如：（a v b v …）^（c v d v …）^…</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>这样的我们叫做合取范式。其中（a v b v …）这样的叫做子句。类似a，b…叫做文字。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>我们把合取范式中一个子句中包含文字不超过两个的问题成为2-SAT问题。在SAT问题中只有这一类我们可以用线性时间内得出答案。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>最常规的2-SAT题目分为大致两种，一种是让你判断有没有解，另一种是让你输出一组解。针对这两种给出模版。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>在这之前先来介绍一下2-SAT题目的大致解题步骤：</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>对于2-SAT问题我们需要构建一张有向图每个文字拆为两个节点 例如 a 变为 a， !a</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>首先我们从题目中总结出来的都是一些比较杂乱的逻辑表达式，不过一般都是两两之间的关系，我们需要做的第一步是化简成用^连接。然后对于每个子句建边。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>建边的规则是这样的 a -&gt; b那么在有向图中建一条a到b的边</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>我们可能得到的子句有：</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>a v b 我们可以化简 !a-&gt;b ^ !b-&gt;a</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>a -&gt; b 直接连边</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>a 转化为!a -&gt; a</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>其中每个文字及其的非对应相应的结点，若是出现在文字前有非的关系例如 !a v b 那么变通一下 就化成 a -&gt; b ^ !b -&gt; !a就可以了。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>到这里我们要做的事（建图）就完成了，接下来交给模版，我们来看一下模版做了什么：</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>首先我们对建完的有向图求强连通分支，若是出现有一个逻辑变量和他的反在同一个联通分之内就无解，否则有解。</p>
+</blockquote>
+<blockquote>
+</blockquote>
+<blockquote>
+<p>若a所在的强连通分支的拓扑序在!a之后a为真，否则为反。怎么样很简单吧。</p>
+</blockquote>
+<pre><code>vector&lt;int&gt; G[N];
+vector&lt;int&gt; G2[N];
+
+vector&lt;int&gt; S;
+int vis[N] ;  //标记数组
+int sccno[N]; //记录数组 sccno[i] 记录  i属于哪个联通分支
+int scc_cnt;  
+
+int n;
+
+void dfs1(int u){
+    if(vis[u]) return ;
+    vis[u] = true;
+    for(int i = 0; i &lt; G[u].size(); i++){
+        dfs1(G[u][i]);
+    }
+    S.push_back(u);
+}
+
+void dfs2(int u){
+    if(sccno[u]) return;
+    sccno[u] = scc_cnt;
+    for(int i = 0; i &lt; G2[u].size(); i++){
+        dfs2(G2[u][i]);
+    }
+}
+
+void find_scc(int n){
+    scc_cnt = 0;
+    S.clear();
+    memset(vis , 0 , sizeof(vis));
+    memset(sccno , 0 , sizeof(sccno));
+    for(int i = 0; i &lt; n; i++) dfs1(i);
+    for(int i = n - 1; i &gt;= 0; i--) if(!sccno[S[i]]){
+        scc_cnt++;
+        dfs2(S[i]);
+    }
+}
+
+void AddEdge(int u , int v) {
+    G[u].push_back(v);
+    G2[v].push_back(u);
+}
+
+int main(){
+    /***
+    输入数据
+    */
+
+    /***
+    加边  边未两者不能匹配的  
+    example ：
+    {u,v}  当选择u的时候一定不能选择v ,需要选择v&#39;;
+    */
+
+    find_scc(2 * n);  //注意x2
+
+    for(int i = 0; i &lt; n; i++){
+        if(sccno[i] == sccno[i + n]){
+            //如果有x与x&#39;同时被取或者未取，则匹配失败
+            puts(&quot;NO&quot;);
+            return 0;
+        }
+    }
+
+    puts(&quot;YES&quot;);
+    for(int i = 0; i &lt; n; i++){
+        if(sccno[i] &gt; sccno[i + n]){
+            //相关 i;
+        }
+        else {
+            //相关 i&#39;;
+        }
+    }
+    return 0;
+}
+/********************************************************/
+/****************************************
+     2-SAT kosaraju算法        
+     By 小豪                
+*****************************************/
+const int LEN = 200000+10;
+vector&lt;int&gt; Map[LEN], rMap[LEN], vs;
+int n, m, vis[LEN], sccn[LEN];
+
+void dfs(int v){
+    vis[v] = 1;
+    for(int i=0; i&lt;Map[v].size(); i++)
+        if(!vis[Map[v][i]]) dfs(Map[v][i]);
+    vs.PB(v);
+}
+
+void rdfs(int v, int f){
+    vis[v] = 1;
+    sccn[v] = f;
+    for(int i=0; i&lt;rMap[v].size(); i++)
+        if(!vis[rMap[v][i]]) rdfs(rMap[v][i], f);
+}
+
+int scc(){
+     memset(vis, 0, sizeof vis);
+     vs.clear();
+     for(int i=0; i&lt;2*n; i++) if(!vis[i]) dfs(i);
+     memset(vis, 0, sizeof vis);
+     int k = 0;
+     for(int i = vs.size()-1; i&gt;=0; i--) if(!vis[vs[i]]) rdfs(vs[i], k++);
+     return k;
+}
+
+void addedge(int a, int b){
+    Map[a].PB(b);
+    rMap[b].PB(a);
+}
+
+void solve()
+{
+    scc();
+    for(int i=0; i&lt;2*n; i+=2)
+        if(sccn[i] == sccn[i+1]){
+                //printf(&quot;No solution.\n&quot;);
+        　　　　 //无解
+            return ;
+        }
+    for(int i=0; i&lt;n; i++){
+        if(sccn[i*2] &gt; sccn[i*2+1]) printf(&quot;Yes\n&quot;);
+        else printf(&quot;No\n&quot;);
+    }
+}
+</code></pre><h2 id="网络流"><a href="#网络流" class="headerlink" title="网络流"></a>网络流</h2><p><a href="http://blog.csdn.net/u013368721/article/details/39716401" target="_blank" rel="noopener"> 网络流各种骚操作 </a></p>
+<h4 id="dinic-没有当前弧优化"><a href="#dinic-没有当前弧优化" class="headerlink" title="dinic(没有当前弧优化"></a>dinic(没有当前弧优化</h4><pre><code>const int MAXN = 210;
+const int MAXM = 210*210;
+const int INF = 0x3f3f3f3f;
+
+struct Edge {
+    int v, f;
+    int next;
+} edge[MAXM];
+
+int n, m;
+int cnt;
+
+int head[MAXN], level[MAXN];
+int q[MAXN];
+
+void read_graph(int u, int v, int f) {
+    edge[cnt].v = v, edge[cnt].f = f;
+    edge[cnt].next = head[u], head[u] = cnt++;
+    edge[cnt].v = u, edge[cnt].f = 0;  //增加一条反向弧，容量为0
+    edge[cnt].next = head[v], head[v] = cnt++;
+}
+//BFS构建层次网络：
+int bfs(int s, int t) { //构建层次网络
+    memset(level, 0, sizeof(level));
+    level[s] = 1;
+    int front = 0, rear = 1;
+    q[front] = s;
+    while(front &lt; rear) {
+        int x = q[front++];
+        if(x == t) return 1;
+        for(int e = head[x]; e != -1; e = edge[e].next) {
+            int v = edge[e].v, f = edge[e].f;
+            if(!level[v] &amp;&amp; f) {
+                level[v] = level[x] + 1;
+                q[rear++] = v;
+            }
+        }
+    }
+    return 0;
+}
+//DFS找寻增广路：
+int dfs(int u, int maxf, int t) {
+    if(u == t) return maxf;
+    int ret = 0;
+    for(int e = head[u]; e != -1; e = edge[e].next) {
+        int v = edge[e].v, f = edge[e].f;
+        if(level[u] + 1 == level[v] &amp;&amp; f) {
+            int Min = min(maxf-ret, f);
+            f = dfs(v, Min, t);
+            edge[e].f -= f;
+            edge[e^1].f += f;
+            ret += f;
+            if(ret == maxf) return ret;
+        }
+    }
+    return ret;
+}
+
+int Dinic(int s, int t) { //Dinic
+    int ans = 0;
+    while(bfs(s, t)) ans += dfs(s, INF, t);
+    return ans;
+}
+
+int main() {
+    while(~scanf(&quot;%d%d&quot;,&amp;m,&amp;n)){
+        cnt = 0;
+        memset(head, -1, sizeof(head));
+        for(int x,y,v;m--;){
+            scanf(&quot;%d%d%d&quot;,&amp;x,&amp;y,&amp;v);
+            read_graph(x,y,v);
+        }
+        printf(&quot;%d\n&quot;,Dinic(1,n));
+    }
+    return 0;
+}
+</code></pre><h1 id="树"><a href="#树" class="headerlink" title="树"></a>树</h1><blockquote>
+<p>树被定义为没有圈的连通图，具有以下几个性质：<br>1. 在树中去掉一条边后所得的图是不连通的。<br>2. 在树中添加一条边后所得的图一定存在圈。<br>3. 树的每一对顶点 U 和 V 之间有且仅有一条路径。</p>
+</blockquote>
+<h2 id="树的直径"><a href="#树的直径" class="headerlink" title="树的直径"></a>树的直径</h2><p>树的直径(Diameter)是指树上的最长简单路。</p>
+<blockquote>
+<p>直径的求法：两遍搜索 (BFS or DFS)<br>任选一点w为起点，对树进行搜索，找出离w最远的点u。<br>以u为起点，再进行搜索，找出离u最远的点v。则u到v的路径长度即为树的直径。</p>
+</blockquote>
+<h2 id="树的重心"><a href="#树的重心" class="headerlink" title="树的重心"></a>树的重心</h2><blockquote>
+<p>树的重心：找到一个点，其所有的子树中最大的子树节点数最少,那么这个点就是这棵树的重心,删去重心后，生成的多棵树尽可能平衡。<br>树的重心可以通过简单的两次搜索求出，第一遍搜索求出每个结点的子结点数量son[u]，第二遍搜索找出使max{son[u],n-son[u]-1}最小的结点。<br>实际上这两步操作可以在一次遍历中解决。对结点u的每一个儿子v，递归的处理v，求出son[v]，然后判断是否是结点数最多的子树，处理完所有子结点后，判断u是否<br>为重心。</p>
+</blockquote>
+<pre><code>例题 1655
+
+int n;
+
+vector&lt;int &gt;G[N];
+void add(int u,int v){G[u].push_back(v);}
+
+int sz[N],siz,zx;
+
+void dfs(int u,int f=0){
+    sz[u]=1;int mx=0;
+    int gz=G[u].size();
+    for(int i=0,to;i&lt;gz;i++){
+        to = G[u][i];
+        if(to == f) continue;
+        dfs(to,u);
+        sz[u]+=sz[to];
+        mx=max(mx,sz[to]);
+    }
+    mx=max(mx,n-sz[u]);
+    if(mx==siz&amp;&amp;u&lt;zx) zx=u;
+    if(mx&lt;siz) zx=u,siz=mx;
+}
+
+int main(){
+    int _;
+    for(scanf(&quot;%d&quot;,&amp;_);_--;){
+        scanf(&quot;%d&quot;,&amp;n);
+        for(int i=1,u,v;i&lt;n;i++){
+            scanf(&quot;%d%d&quot;,&amp;u,&amp;v);
+            add(u,v);add(v,u);
+        }
+        siz = n*10; dfs(1);
+        printf(&quot;%d %d\n&quot;,zx,siz);
+        for(int i=1;i&lt;=n;i++) G[i].clear();
+    }
+    return 0;
+}
+</code></pre>
+            </div>
+            <hr/>
+
+            
+            <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.88rem;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-large waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fa fa-close"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.jpg" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+            
+
+            <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+
+<div id="article-share">
+    
+    <div class="social-share" data-disabled="qzone" data-wechat-qrcode-helper="<p>微信里点“发现”->“扫一扫”二维码便可查看分享。</p>"></div>
+    
+</div>
+
+<script src="/libs/share/js/social-share.min.js"></script>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        <p class="reprint-tip">
+            <i class="fa fa-exclamation-triangle"></i>&nbsp;&nbsp;
+            <span>转载规则</span>
+        </p>
+        
+            <div class="center-align">
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                    <img alt=""
+                         style="border-width:0"
+                         src="https://i.creativecommons.org/l/by/4.0/88x31.png"/>
+                </a>
+            </div>
+            <br/>
+            <span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text"
+                  property="dct:title" rel="dct:type">
+                    《&lt;原&gt;#  图论 [未完成 待续~待修改]》
+                </span> 由
+            <a xmlns:cc="http://creativecommons.org/ns#" href="/2017/01/26/54746580/" property="cc:attributionName"
+               rel="cc:attributionURL">
+                tabris
+            </a> 采用
+            <a rel="license" href="https://creativecommons.org/licenses/by/4.0/deed.zh">
+                知识共享署名 4.0 国际许可协议
+            </a>进行许可。
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+        <style>
+    .valine-card {
+        margin: 1.5rem auto;
+    }
+
+    .valine-card .card-content {
+        padding: 20px 20px 5px 20px;
+    }
+
+    #vcomments input[type=text],
+    #vcomments input[type=email],
+    #vcomments input[type=url],
+    #vcomments textarea {
+        box-sizing: border-box;
+    }
+
+    #vcomments p {
+        margin: 2px 2px 10px;
+        font-size: 1.05rem;
+        line-height: 1.78rem;
+    }
+
+    #vcomments blockquote p {
+        text-indent: 0.2rem;
+    }
+
+    #vcomments a {
+        padding: 0 2px;
+        color: #42b983;
+        font-weight: 500;
+        text-decoration: underline;
+    }
+
+    #vcomments img {
+        max-width: 100%;
+        height: auto;
+        cursor: pointer;
+    }
+
+    #vcomments ol li {
+        list-style-type: decimal;
+    }
+
+    #vcomments ol,
+    ul {
+        display: block;
+        padding-left: 2em;
+        word-spacing: 0.05rem;
+    }
+
+    #vcomments ul li,
+    ol li {
+        display: list-item;
+        line-height: 1.8rem;
+        font-size: 1rem;
+    }
+
+    #vcomments ul li {
+        list-style-type: disc;
+    }
+
+    #vcomments ul ul li {
+        list-style-type: circle;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    #vcomments table, th, td {
+        border: 0;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments h1 {
+        font-size: 1.85rem;
+        font-weight: bold;
+        line-height: 2.2rem;
+    }
+
+    #vcomments h2 {
+        font-size: 1.65rem;
+        font-weight: bold;
+        line-height: 1.9rem;
+    }
+
+    #vcomments h3 {
+        font-size: 1.45rem;
+        font-weight: bold;
+        line-height: 1.7rem;
+    }
+
+    #vcomments h4 {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    #vcomments h5 {
+        font-size: 1.1rem;
+        font-weight: bold;
+        line-height: 1.4rem;
+    }
+
+    #vcomments h6 {
+        font-size: 1rem;
+        line-height: 1.3rem;
+    }
+
+    #vcomments p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    #vcomments hr {
+        margin: 12px 0;
+        border: 0;
+        border-top: 1px solid #ccc;
+    }
+
+    #vcomments blockquote {
+        margin: 15px 0;
+        border-left: 5px solid #42b983;
+        padding: 1rem 0.8rem 0.3rem 0.8rem;
+        color: #666;
+        background-color: rgba(66, 185, 131, .1);
+    }
+
+    #vcomments pre {
+        font-family: monospace, monospace;
+        padding: 1.2em;
+        margin: .5em 0;
+        background: #272822;
+        overflow: auto;
+        border-radius: 0.3em;
+        tab-size: 4;
+    }
+
+    #vcomments code {
+        font-family: monospace, monospace;
+        padding: 1px 3px;
+        font-size: 0.92rem;
+        color: #e96900;
+        background-color: #f8f8f8;
+        border-radius: 2px;
+    }
+
+    #vcomments pre code {
+        font-family: monospace, monospace;
+        padding: 0;
+        color: #e8eaf6;
+        background-color: #272822;
+    }
+
+    #vcomments pre[class*="language-"] {
+        padding: 1.2em;
+        margin: .5em 0;
+    }
+
+    #vcomments code[class*="language-"],
+    pre[class*="language-"] {
+        color: #e8eaf6;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+
+    #vcomments b,
+    strong {
+        font-weight: bold;
+    }
+
+    #vcomments dfn {
+        font-style: italic;
+    }
+
+    #vcomments small {
+        font-size: 85%;
+    }
+
+    #vcomments cite {
+        font-style: normal;
+    }
+
+    #vcomments mark {
+        background-color: #fcf8e3;
+        padding: .2em;
+    }
+
+    #vcomments table, th, td {
+        padding: 12px 13px;
+        border: 1px solid #dfe2e5;
+    }
+
+    table tr:nth-child(2n), thead {
+        background-color: #fafafa;
+    }
+
+    #vcomments table th {
+        background-color: #f2f2f2;
+        min-width: 80px;
+    }
+
+    #vcomments table td {
+        min-width: 80px;
+    }
+
+    #vcomments [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        position: inherit;
+        margin-left: -1.3rem;
+        margin-right: 0.4rem;
+        margin-top: -1px;
+        vertical-align: middle;
+        left: unset;
+        visibility: visible;
+    }
+</style>
+
+<div class="card valine-card" data-aos="fade-up">
+    <div id="vcomments" class="card-content"></div>
+</div>
+
+<script src="/libs/valine/av-min.js"></script>
+<script src="/libs/valine/Valine.min.js"></script>
+<script>
+    new Valine({
+        el: '#vcomments',
+        appId: 'XkeYrd6r1FrJXgASPvPJa9Hp-gzGzoHsz',
+        appKey: 'de9Yfw8ns8xwf6S9eHOj82Wi',
+        notify: 'false' === 'true',
+        verify: 'false' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'mm',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go'
+    });
+</script>
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fa fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2017/01/29/54780836/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/22.jpg" class="responsive-img" alt="<原>#  HDU 5869 Different GCD Subarray Query [区间gcd预处理+离线]【数据结构】">
+                        
+                        <span class="card-title"><原>#  HDU 5869 Different GCD Subarray Query [区间gcd预处理+离线]【数据结构】</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="fa fa-clock-o fa-fw icon-date"></i>2017-01-29
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/OJ算法题/" class="post-category" target="_blank">
+                                    OJ算法题
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fa fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2017/01/26/54746352/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="<原>#  HDU 5943 Kingdom of Obsession [素数间隔+二分图匹配]【数论+图论】">
+                        
+                        <span class="card-title"><原>#  HDU 5943 Kingdom of Obsession [素数间隔+二分图匹配]【数论+图论】</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            这是你自定义的文章摘要内容，如果这个属性有值，文章卡片摘要就显示这段文字，否则程序会自动截取文章的部分内容作为摘要
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="fa fa-clock-o fa-fw icon-date"></i>2017-01-26
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fa fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/OJ算法题/" class="post-category" target="_blank">
+                                    OJ算法题
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: tabris的博客<br />'
+            + '作者: tabris<br />'
+            + '链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者(tabris)所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget">
+            <div class="toc-title"><i class="fa fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fa fa-list"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            // headingsOffset: -205,
+            headingSelector: 'h1, h2, h3, h4, h5, h6'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h1, h2, h3, h4, h5, h6').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).slideUp(500);
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).slideDown(500);
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+    
+
+</main>
+
+
+<footer class="page-footer bg-color">
+    <div class="container row center-align">
+        <div class="col s12 m8 l8 copy-right">
+            本站由&copy;<a href="https://blinkfox.github.io/" target="_blank">Blinkfox</a>基于
+            <a href="https://hexo.io/" target="_blank">Hexo</a> 的
+            <a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">hexo-theme-matery</a>主题搭建.
+
+            
+                &nbsp;<i class="fa fa-area-chart"></i>&nbsp;站点总字数:&nbsp;
+                <span class="white-color">414.6k</span>
+            
+
+            
+			
+                <br>
+                
+                <span id="busuanzi_container_site_pv">
+                    <i class="fa fa-heart-o"></i>
+                    本站总访问量 <span id="busuanzi_value_site_pv" class="white-color"></span>
+                </span>
+                
+                
+                <span id="busuanzi_container_site_uv">
+                    <i class="fa fa-users"></i>
+                    次,&nbsp;访客数 <span id="busuanzi_value_site_uv" class="white-color"></span> 人.
+                </span>
+                
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/tabris233" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fa fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:604925267@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fa fa-envelope-open"></i>
+    </a>
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=604925267" class="tooltipped" data-tooltip="QQ联系我: 604925267" data-position="top" data-delay="50">
+        <i class="fa fa-qq"></i>
+    </a>
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fa fa-rss"></i>
+    </a>
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+<!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fa fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script src="/js/search.js"></script>
+<script type="text/javascript">
+$(function () {
+    searchFunc("/" + "search.xml", 'searchInput', 'searchResult');
+});
+</script>
+<!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fa fa-angle-up"></i>
+    </a>
+</div>
+
+
+<script src="/libs/materialize/materialize.min.js"></script>
+<script src="/libs/masonry/masonry.pkgd.min.js"></script>
+<script src="/libs/aos/aos.js"></script>
+<script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+<script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+<script src="/js/matery.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+
+
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+
+
+</body>
+</html>
