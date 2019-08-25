@@ -20,7 +20,6 @@ tags:
   - ruby
   - docker
   - npm
-
 ---
 
 # Arch or manjaro : pacman
@@ -50,6 +49,7 @@ Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 sudo cp /etc/apt/sources.list /etc/apt/sources_init.list
 ```
 
+
 将以前的源备份一下，以防以后可以用的。
 
 ## 2.更换源
@@ -57,6 +57,7 @@ sudo cp /etc/apt/sources.list /etc/apt/sources_init.list
 ```shell
 sudo gedit /etc/apt/sources.list
 ```
+
 
 使用gedit打开文档，将下边的阿里源复制进去，然后点击保存关闭。
 
@@ -87,6 +88,7 @@ deb-src http://mirrors.aliyun.com/ubuntu/ xenial-security universe
 ```shell
 sudo apt-get update
 ```
+
 
 复损坏的软件包，尝试卸载出错的包，重新安装正确版本的。
 
@@ -120,7 +122,6 @@ deb http://linux.xidian.edu.cn/mirrors/ubuntu/ xenial-updates main restricted un
 
 #deb http://linux.xidian.edu.cn/mirrors/ubuntu/ xenial-proposed main restricted universe multiverse
 #deb-src http://linux.xidian.edu.cn/mirrors/ubuntu/ xenial-proposed main restricted universe multiverse
-
 ```
 
 ### 清华源
@@ -141,7 +142,6 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-backports main restricte
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
 
 # deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ xenial-security main restricted universe multiverse
-
 ```
 
 ### 网易源
@@ -157,32 +157,21 @@ deb-src http://mirrors.163.com/ubuntu/ wily-security main restricted universe mu
 deb-src http://mirrors.163.com/ubuntu/ wily-updates main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-proposed main restricted universe multiverse
 deb-src http://mirrors.163.com/ubuntu/ wily-backports main restricted universe multiverse
-
 ```
 
 # git
 
-```shell
-git config --global http.proxy 'socks5://127.0.0.1:1080'
-```
 
-### git 设置不用每次输入帐号密码
-
-执行一下 这个命令：
-
-`git config --global credential.helper store`
-
-然后，下次再输入一次 账号密码 就可以了。
 
 # pip
 
 **pip国内的一些镜像**
 
-- 阿里云 <http://mirrors.aliyun.com/pypi/simple/> 
-- 中国科技大学 <https://pypi.mirrors.ustc.edu.cn/simple/> 
-- 豆瓣(douban) <http://pypi.douban.com/simple/> 
-- 清华大学 <https://pypi.tuna.tsinghua.edu.cn/simple/> 
-- 中国科学技术大学 <http://pypi.mirrors.ustc.edu.cn/simple/>
+-   阿里云 <http://mirrors.aliyun.com/pypi/simple/> 
+-   中国科技大学 <https://pypi.mirrors.ustc.edu.cn/simple/> 
+-   豆瓣(douban) <http://pypi.douban.com/simple/> 
+-   清华大学 <https://pypi.tuna.tsinghua.edu.cn/simple/> 
+-   中国科学技术大学 <http://pypi.mirrors.ustc.edu.cn/simple/>
 
 **修改源方法：**
 
@@ -197,28 +186,22 @@ eg: `pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple`
 ```toml
 [global]
 index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-
 ```
 
  
 
 # ruby
 
-> <https://gems.ruby-china.com/>
+>   <https://ruby.taobao.org/>
 
 ```shell
-$ gem update --system # 这里请翻墙一下
-$ gem -v
-2.6.3
-
-$ gem sources --add https://gems.ruby-china.com/ --remove https://rubygems.org/
+$ gem sources --add https://gems.ruby-china.org/ --remove https://rubygems.org/
 $ gem sources -l
 *** CURRENT SOURCES ***
 
 https://gems.ruby-china.org
 # 请确保只有 gems.ruby-china.org
 $ gem install rails
-
 ```
 
 # docker
@@ -243,37 +226,37 @@ $ gem install rails
 
 安装node.js后，现在的node.js已经自带了npm工具了，但是国外的源很慢，为了解决这个问题，同时使用cnpm替换npm，我们通过切换源，切换到国内淘宝的源中。下面是我的操作过程。简单记录便于以后自己查看。
 
-1. 查看npm版本
+1.  查看npm版本
 
-   ```shell
-   npm -v
-   ```
+    ```shell
+    npm -v
+    ```
 
-2. 升级npm版本
+2.  升级npm版本
 
-   ```shell
-   npm update
-   ```
+    ```shell
+    npm update
+    ```
 
-3. 查看npm配置
+3.  查看npm配置
 
-   ```shell
-   npm config list
-   ```
+    ```shell
+    npm config list
+    ```
 
-4. 更换源配置
+4.  更换源配置
 
-   ```shell
-   npm config set registry https://registry.npm.taobao.org
-   npm config list / npm config get registery #检查是否替换成功
-   ```
+    ```shell
+    npm config set registry https://registry.npm.taobao.org
+    npm config list / npm config get registery #检查是否替换成功
+    ```
 
-5. 安装cnpm插件
+5.  安装cnpm插件
 
-   ```shell
-   npm install -g cnpm --registry=https://registry.npm.taobao.org
-   cnpm -v
-   ```
+    ```shell
+    npm install -g cnpm --registry=https://registry.npm.taobao.org
+    cnpm -v
+    ```
 
-6. 安装包测试
+6.  安装包测试
 
