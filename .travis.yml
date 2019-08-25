@@ -33,6 +33,6 @@ deploy: # 发布阶段
   email: tabris.dq@qq.com
   name: tabris
   project_name: tabris_blog_travis-ci
-  # on: # 这个静态文件来自travis中的master分支
-  #   branch: matery
-  #   all_branches: true
+  on: # 这个静态文件来自travis中的master分支
+    branch: matery
+    all_branches: true
