@@ -1,7 +1,7 @@
 ---
 title: travis-ci 自动化部署hexo静态博客
 date: 2019-08-02 10:48:16
-description: 用户只需要在$markdown$原文上修改,然后`push`到$github$上去就可以自动构建博客了
+description: 用户只需要在`markdown`原文上修改,然后`push`到`github`上去就可以自动构建博客了
 toc: true
 author: tabris
 # 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/xxx.jpg
@@ -22,25 +22,25 @@ tags:
 
 > 使用github pages的用户应该都有一个痛点, 就是要本地写好博文后再执行`hexo c`,`hexo g`,`hexo d`等命令, 特别是当博文数量多了的时候`hexo g`就要等待几分钟甚至更长时间,然后在`hexo d` 甚是烦恼.
 >
-> 查了资料, 有了$travis-ci$这个$GitHub$ 的亲兄弟,就容易的多了, 只需$3$步配置,就可以享受持续集成自动部署博客的. 
+> 查了资料, 有了`travis-ci`这个`GitHub` 的亲兄弟,就容易的多了, 只需`3`步配置,就可以享受持续集成自动部署博客的. 
 >
-> 用户只需要在$markdown$原文上修改,然后`push`到$github$上去就可以了,
+> 用户只需要在`markdown`原文上修改,然后`push`到`github`上去就可以了,
 
 ## Step 1 GitHub 上配置
 
-1. 安装$github\ app$
+1. 安装`github\ app`
 
     https://github.com/settings/installations
 
     ![image-20190825142940431](test_travis.assets/image-20190825142940431.png)
 
-2. 申请$Personal\ access\ tokens$
+2. 申请`Personal\ access\ tokens`
 
     转送门 -> https://github.com/settings/tokens
 
-    在这里主要是设置`github-token`,让$travis$有权限读写$github$项目文件
+    在这里主要是设置`github-token`,让`travis`有权限读写`github`项目文件
 
-    去$github$上申请一个就好
+    去`github`上申请一个就好
 
     点`生产新的token`的按钮.申请好后就会出现下面的那个.
 
@@ -56,21 +56,21 @@ tags:
 
     > 注意私有项目需要用<https://travis-ci.com> 这个是需要费用的.
 
-    用$github$账号登录<https://travis-ci.org>, 在右上角头像出现下拉框里面选择设置,
+    用`github`账号登录<https://travis-ci.org>, 在右上角头像出现下拉框里面选择设置,
 
     然后找你博客源码所在项目, (我的项目放在`tabris233.github.io`的`blog-source`分支下,所以勾选这个项目,然后点后面的`Settings`)
 
     ![image-20190825140545978](test_travis.assets/image-20190825140545978.png)
 
-    先在$2$上添加`github-token`值用刚刚申请好的哪一个, 后面在构建日志中展示值得选项可勾可不勾. 然后点`add`,  然后就会出现在$1$的位置.
+    先在`2`上添加`github-token`值用刚刚申请好的哪一个, 后面在构建日志中展示值得选项可勾可不勾. 然后点`add`,  然后就会出现在`1`的位置.
 
-    Ps: $3$ 是个定时构建, 看个人心情, 随意了.
+    Ps: `3` 是个定时构建, 看个人心情, 随意了.
 
     ![image-20190825141146382](test_travis.assets/image-20190825141146382.png)
 
 2. 要在项目根目录建立`.travis.yml`文件
 
-    > 其实这个配置文件写的比较烂, <https://travis-ci.org>对$github\ pages$有一个专门的配置`yaml`,
+    > 其实这个配置文件写的比较烂, <https://travis-ci.org>对`github\ pages`有一个专门的配置`yaml`,
     >
     > 我这个算是专门配置加原始配置杂交出来的....
     >
@@ -121,8 +121,8 @@ deploy:              # 发布阶段
 
 ## Step 3
 
-修改博文$markdown$ 然后$push$上去就行了. 会看到这样的界面
+修改博文`markdown` 然后`push`上去就行了. 会看到这样的界面
 
-包含构建日志什么的,最后会部署到$github\ pages$的`master`分支上
+包含构建日志什么的,最后会部署到`github\ pages`的`master`分支上
 
 ![image-20190825141944578](test_travis.assets/image-20190825141944578.png)
