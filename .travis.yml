@@ -4,7 +4,7 @@ node_js: '11' # node环境的版本
 
 branches: # 该shell脚本只对github的matery分支生效
   only: 
-    - matery
+    - blog-source
 
 git: # 克隆github上的项目到travis
   quite: true # 为了不打印一些日志，故设为安静克隆
