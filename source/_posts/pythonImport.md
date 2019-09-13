@@ -19,6 +19,8 @@ tags:
 
 ---
 
+> ***未完待续***
+
 # python import研究
 
 ​	`python`用了好久了, 对它的`import`规则一直都很懵,借此机会梳理下.
@@ -38,34 +40,4 @@ import module_name
 ```python
 from dir import module_name
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
