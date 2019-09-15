@@ -26,7 +26,7 @@ tags:
 >
 > 
 >
-> 现在觉得折腾确实挺有趣的, 但以后有机会还是配一个mbp吧, linux的桌面环境是真的烦人..aur和完善的桌面环境感觉还是后者比较重要.
+> 现在觉得折腾确实挺有趣的, 但以后有机会还是配一个mbp吧, linux的桌面环境是真的烦人..aur和稳定的桌面环境感觉还是后者比较重要.
 >
 > 
 >
@@ -131,51 +131,19 @@ yay 的特性：
 
 安装 yay：
 
-> **现在yay已经添加到官方源中**
->
-> **`sudo pacman -S yay`即可安装**
+**现在yay已经添加到官方源中**
 
-当然你还可以从 `git` 克隆并编译安装。
-
-```
-git clone https://aur.archlinux.org/yay.git
-cd yay
-makepkg -si
-```
-
-使用 yay：
-
-搜索：
-
-```
-yay -Ss <package-name>
-```
-
-安装：
-
-```
-yay -S <package-name>
-```
-
-
-
-#### powerline
-
-Powerline 是 vim、zsh、bash、tmux、IPython、Awesome、bar、fish、lemonbar、pdb、rc、shell、tcsh、wm、i3 和 Qtil 中的一个状态栏插件。它给程序提供了状态栏，并使程序更好看。它用 Python 写成。
-
-
+`sudo pacman -S yay`
 
 #### VPN
 
 electron-ssr : GUI的界面的ssr.很好用
 
-####  中文字体
+####  中文字
 
-[参考ArchWiki]
+[参考ArchWiki](https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)
 
-<https://wiki.archlinux.org/index.php/Font_Configuration/Chinese_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87)>
-
-```
+```shell
 yay -S ttf-ms-fonts ttf-roboto noto-fonts noto-fonts-cjk adobe-source-han-sans-cn-fonts adobe-source-han-serif-cn-fonts ttf-dejavu
 ```
 
@@ -258,11 +226,11 @@ chsh -s /bin/zsh
 为在使用tmux时不重复显示`whoami@whereami`做两处修改
 
 - 在`/etc/profile`中添加环境变量
-  ```
+  ```shell
   DEFAULT_USER=$USER
   ```
 - 在`agnoster`主题文件91行中做如下修改
-  ```git
+  ```shell
   - if [[ "$USER" != "$DEFAULT_USER" || -n "$SSH_CLIENT"]]; then
   + if [[ "$USER" != "$DEFAULT_USER" || (( -n "$SSH_CLIENT" && -z "$TMUX" )) ]]; then
   ```
@@ -281,8 +249,7 @@ sudo pacman -S tmux
 ```
 
 在这里配置tmux
-<https://github.com/gpakosz/.tmux> 这个简单好看,且对true color支持很好,但对
-https://github.com/samoshkin/tmux-config  <--推荐这个配置,这个配置针对键位的优化很好,
+<https://github.com/gpakosz/.tmux> 这个简单好看,且对true color支持很好, `.tmux.conf.local`配置文件很方便
 
 [为 vim + tmux 开启真彩色(true color)](http://lotabout.me/2018/true-color-for-tmux-and-vim/)
 
@@ -362,15 +329,15 @@ fi
 clear 
 ```
 
-glances: 代替htop的资源监控工具
+**glances**: 代替htop的资源监控工具
 
-ranger: ranger是一个以[GPL](https://baike.baidu.com/item/GPL)许可证发放源码，默认使用VIM风格键盘绑定、[curses](https://baike.baidu.com/item/curses/1630775)图形库，基于字符终端的[文件管理器](https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/8716754)，是自由免费软件。
+**ranger**: ranger是一个以[GPL](https://baike.baidu.com/item/GPL)许可证发放源码，默认使用VIM风格键盘绑定、[curses](https://baike.baidu.com/item/curses/1630775)图形库，基于字符终端的[文件管理器](https://baike.baidu.com/item/%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%99%A8/8716754)，是自由免费软件。
 
-tig: git的命令行管理软件
+**tig**: git的命令行管理软件
 
-dockly: docker的命令行管理软件
+~~**dockly**: docker的命令行管理软件,ranger就可以显示docker容器运行状况,轻量使用就没必要用它了~~
 
-wtfutil: 基于 Terminal 的个人 dashboard 实用程序，专为显示不常用的但非常重要的日常数据而设计
+**wtfutil**: 基于 Terminal 的个人 dashboard 实用程序，专为显示不常用的但非常重要的日常数据而设计
 
 ### 常用软件
 
@@ -386,13 +353,15 @@ Typora: markdown编辑器
 
 #### 终端
 
-Yakuake: 悬挂式命令行,很方便
+**Yakuake**: 悬挂式命令行,很方便
+
+**termite**:
+
+**alacrity**: 一个GPU渲染的终端工具,感觉现在比较火,但是个人还没怎么用过,不过还是推荐一下
 
 #### 开发工具
 
-GitKraken: git的图形化管理软件
-
-: (文件对比工具)
+**GitKraken**: git的图形化管理软件
 
 #### 影音
 
@@ -416,19 +385,19 @@ deepin-wechat： 微信
 >
 > 2，运行**env WINEPREFIX="$HOME/.deepinwine/Deepin-TIM" winecfg**（如果是修改QQ界面字体大小，就把Deepin-TIM改成Deepin-QQ），然后将屏幕分辨率拖放到合适的大小（一般120就可以了）。
 
-gitter:
+**gitter**:
 
-telegram:
+**telegram**:
 
 #### 虚拟机
 
-docker
+**docker**
 
-virtualbox
+**virtualbox**
 
 #### helper
 
-albert: linux下的启动器 
+**albert**: linux下的启动器 
 
 
 
