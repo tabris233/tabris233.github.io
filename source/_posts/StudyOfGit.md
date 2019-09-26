@@ -145,3 +145,59 @@ git push -f origin master #强制推送到远程库
 ___
 关于这些只是对于刚入门的学习者有些帮助，在我学习的时候也遇到了好多坑，至今有些问题还能遇到，但是不至于手忙脚乱，起码知道问题出在了哪个环节。
 Git是一个很强大的版本控制工具，有很多功能，需要尝试去深入研究，希望学习者能够感受到他带来的便捷。
+
+----
+
+https方式每次都要输入密码，按照如下设置即可输入一次就不用再手输入密码的困扰而且又享受https带来的极速
+
+设置记住密码（默认15分钟）：
+
+```shell
+git config --global credential.helper cache
+```
+
+
+如果想自己设置时间，可以这样做：
+
+```shell
+git config credential.helper 'cache --timeout=3600'
+```
+
+这样就设置一个小时之后失效
+
+长期存储密码：
+
+```shell
+git config --global credential.helper store
+```
+
+
+增加远程地址的时候带上密码也是可以的。(推荐)
+
+```shell
+http://yourname:password@git.oschina.net/name/project.git
+```
+
+
+补充：使用客户端也可以存储密码的。
+
+
+
+如果你正在使用ssh而且想体验https带来的高速，那么你可以这样做： 切换到项目目录下 ：
+
+cd projectfile/
+移除远程ssh方式的仓库地址
+
+```shell
+git remote rm origin
+```
+
+
+增加https远程仓库地址
+
+```shell
+git remote add origin http://yourname:password@git.oschina.net/name/project.git
+```
+
+
+

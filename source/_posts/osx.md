@@ -46,6 +46,12 @@ tags:
 
 > mac独有分割线?
 
+**iina**: 看视频的软件,大多格式的都能放
+
+**itsycal**: 在menu bar上的时间点一下会出现日历
+
+**cheatsheet**: 长按`command`出现当前应用所有快捷键
+
 **iglance**: 在Mac menu bar上显示CPU内存网速电池等信息的小工具
 
 **Alfred4**: 启动器, 比自带的好用得多,  但高端功能要花钱.
