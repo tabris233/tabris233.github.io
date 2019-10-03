@@ -28,13 +28,13 @@ tags:
 
 ## Step 1 GitHub 上配置
 
-1. 安装`github\ app`
+1. 安装`github app`
 
     https://github.com/settings/installations
 
     ![image-20190825142940431](test_travis.assets/image-20190825142940431.png)
 
-2. 申请`Personal\ access\ tokens`
+2. 申请`Personal access tokens`
 
     转送门 -> https://github.com/settings/tokens
 
