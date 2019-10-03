@@ -18,12 +18,7 @@ install:
     - yarn
 
 script:
-    - cp themes/_config.yml themes/matery/_config.yml
-    - cp -r themes/reward themes/matery/source/medias/reward
-    - cp -r themes/qiu.jpg themes/matery/source/medias/avatar.jpg
-    - cp -r themes/qiu.jpg themes/matery/source/favicon.png
-    - hexo clean
-    - hexo generate
+    - sh travis.sh
 
 deploy: # 发布阶段
     provider: pages # 解析支持者为github pages
