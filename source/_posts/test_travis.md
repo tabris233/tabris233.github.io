@@ -32,7 +32,7 @@ tags:
 
     https://github.com/settings/installations
 
-    ![image-20190825142940431](test_travis.assets/image-20190825142940431.png)
+    ![image-20190825142940431](/images/test_travis.assets/image-20190825142940431.png)
 
 2. 申请`Personal access tokens`
 
@@ -44,11 +44,11 @@ tags:
 
     点`生产新的token`的按钮.申请好后就会出现下面的那个.
 
-    ![image-20190825143124613](test_travis.assets/image-20190825143124613.png)
+    ![image-20190825143124613](/images/test_travis.assets/image-20190825143124613.png)
 
     我勾选的设置,可以参考
 
-    ![image-20190825143240304](test_travis.assets/image-20190825143240304.png)
+    ![image-20190825143240304](/images/test_travis.assets/image-20190825143240304.png)
 
 ## Step 2 配置travis-ci
 
@@ -60,13 +60,13 @@ tags:
 
     然后找你博客源码所在项目, (我的项目放在`tabris233.github.io`的`blog-source`分支下,所以勾选这个项目,然后点后面的`Settings`)
 
-    ![image-20190825140545978](test_travis.assets/image-20190825140545978.png)
+    ![image-20190825140545978](/images/test_travis.assets/image-20190825140545978.png)
 
     先在`2`上添加`github-token`值用刚刚申请好的哪一个, 后面在构建日志中展示值得选项可勾可不勾. 然后点`add`,  然后就会出现在`1`的位置.
 
     Ps: `3` 是个定时构建, 看个人心情, 随意了.
 
-    ![image-20190825141146382](test_travis.assets/image-20190825141146382.png)
+    ![image-20190825141146382](/images/test_travis.assets/image-20190825141146382.png)
 
 2. 要在项目根目录建立`.travis.yml`文件
 
@@ -123,6 +123,6 @@ deploy:              # 发布阶段
 
 修改博文`markdown` 然后`push`上去就行了. 会看到这样的界面
 
-包含构建日志什么的,最后会部署到`github\ pages`的`master`分支上
+包含构建日志什么的,最后会部署到`github pages`的`master`分支上
 
-![image-20190825141944578](test_travis.assets/image-20190825141944578.png)
+![image-20190825141944578](/images/test_travis.assets/image-20190825141944578.png)
