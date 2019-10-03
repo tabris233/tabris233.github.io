@@ -75,51 +75,51 @@ tags:
     > 我这个算是专门配置加原始配置杂交出来的....
     >
     > 最后三行感觉没啥用,但是没有就是不行....
+    
+    ```yaml
+    language: node_js   # 指定运行环境
+    
+    node_js: '11'       # node环境的版本
+    
+    branches:           # 该shell脚本只对github的blog-source分支生效
+      only: 
+        - t'tblog-source
+    
+    git:                 # 克隆github上的项目到travis
+      quite: true        # 为了不打印一些日志，故设为安静克隆
+      depth: 1           # 只克隆最新的一次commit提交，最多可以克隆最新的30次提交，但是没必要
+      submodules: true   # 不克隆子项目(避免再次克隆hexo主题)
+    
+    cache: yarn          # 缓存yarn命令也就是yarn add命令执行后的目录文件，即node_modules
+    
+    install: 
+      - yarn global add hexo-cli # 在安装阶段，运行yarn命令来安装依赖
+      - yarn
+    
+    script:
+      - hexo clean
+      - hexo generate
+    
+    deploy:              # 发布阶段
+      provider: pages    # 解析支持者为github pages
+      skip_cleanup: true # 必须打开，如果在travis构建期间你正在推代码，很可能误删你最新的上传代码
+      github_token: $GITHUB_TOKEN  # 在travis的环境变量获取授权码，表示travis有权对github的项目进行拉取推送操作
+      keep_history: true # 禁止travis对你的github项目进行强制推送 
+      repo: tabris233/tabris233.github.io
+      target-branch: master # 你推送到哪个分支.
+      fqdn: tabris.top
+      local_dir: ./public
+      email: tabris.dq@qq.com
+      name: tabris
+      project_name: tabris_blog_travis-ci
+      on:                 # 这个静态文件来自travis中的master分支
+        branch: matery
+        all_branches: true
+    ```
+    
+    
 
-```yaml
-language: node_js   # 指定运行环境
-
-node_js: '11'       # node环境的版本
-
-branches:           # 该shell脚本只对github的blog-source分支生效
-  only: 
-    - t'tblog-source
-
-git:                 # 克隆github上的项目到travis
-  quite: true        # 为了不打印一些日志，故设为安静克隆
-  depth: 1           # 只克隆最新的一次commit提交，最多可以克隆最新的30次提交，但是没必要
-  submodules: true   # 不克隆子项目(避免再次克隆hexo主题)
-
-cache: yarn          # 缓存yarn命令也就是yarn add命令执行后的目录文件，即node_modules
-
-install: 
-  - yarn global add hexo-cli # 在安装阶段，运行yarn命令来安装依赖
-  - yarn
-
-script:
-  - hexo clean
-  - hexo generate
-
-deploy:              # 发布阶段
-  provider: pages    # 解析支持者为github pages
-  skip_cleanup: true # 必须打开，如果在travis构建期间你正在推代码，很可能误删你最新的上传代码
-  github_token: $GITHUB_TOKEN  # 在travis的环境变量获取授权码，表示travis有权对github的项目进行拉取推送操作
-  keep_history: true # 禁止travis对你的github项目进行强制推送 
-  repo: tabris233/tabris233.github.io
-  target-branch: master # 你推送到哪个分支.
-  fqdn: tabris.top
-  local_dir: ./public
-  email: tabris.dq@qq.com
-  name: tabris
-  project_name: tabris_blog_travis-ci
-  on:                 # 这个静态文件来自travis中的master分支
-    branch: matery
-    all_branches: true
-```
-
-
-
-## Step 3
+## Step 3 travis-ci执行任务
 
 修改博文`markdown` 然后`push`上去就行了. 会看到这样的界面
 
