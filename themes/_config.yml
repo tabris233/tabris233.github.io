@@ -85,7 +85,10 @@ video:
 # Whether to display the title of the recommended posts
 # 是否显示推荐文章的标题
 recommend:
+  enable: true
   showTitle: true
+  useConfig: false # 是否使用配置文件, 在 _data/recommends.json 下配置推荐文章, false则会走主题配置的 top 属性
+  # useConfig 使用方式: 将主题 hexo-theme-matery/source/_data/recommends.json 移动到 my-blog/source/_data/下修改配置即可
 
 # Configure website favicon and LOGO
 # 配置网站favicon和网站LOGO
@@ -99,13 +102,13 @@ indexbtn:
   enable: true
   name: Github
   icon: fab fa-github-alt
-  url: https://github.com/tabris23
+  url: https://github.com/tabris233
 
 # The configurations of the second line of home banner
 # icon/button will not show up if you leave the corresponding socialLink empty
 # 首页 banner 中的第二行个人信息配置，留空即不启用
 socialLink:
-  github: https://github.com/tabris23 # https://github.com/xxx
+  github: https://github.com/tabris233 # https://github.com/xxx
   email: tabris.dq@qq.com # xxx@xxx.com
   facebook: # https://www.facebook.com/xxx
   twitter: https://twitter.com/YQ996CO35747904 # https://twitter.com/xxx
@@ -121,12 +124,15 @@ socialLink:
 toc:
   enable: true
   heading: h1, h2, h3, h4, h5, h6
+  collapseDepth: 0 # 目录默认展开层级
   showToggleBtn: true # 是否显示切换TOC目录展开收缩的按钮
 
-# Whether the code is broken.
-# 代码是否折行
+# 代码块相关
 code:
-  break: true
+  lang: true # 代码块是否显示名称
+  copy: true # 代码块是否可复制
+  shrink: true # 代码块是否可以收缩
+  break: false # 代码是否折行
 
 # 是否激活文章末尾的打赏功能，默认激活（你替换为的你自己的微信、支付宝二维码图片、或者使用网络图片也可以）.
 reward:
@@ -157,11 +163,13 @@ mathjax:
 # install the plugin command: `npm i --save hexo-wordcount`.
 # 文章字数统计、阅读时长、总字数统计
 # 激活前请确认你已经安装了 hexo-wordcount 插件，安装命令: `npm i --save hexo-wordcount`
-wordCount:
-  enable: true
-  postWordCount: true
-  min2read: true
-  totalCount: true
+postInfo:
+  date: true # 发布日期
+  update: true # 更新日期
+  wordCount: true # 文章字数统计
+  totalCount: true # 站点总文章字数
+  min2read: true # 文章阅读时长
+  readCount: true # 文章阅读次数
 
 # Whether to activate the 'love' effect of clicking on the page.
 # 是否激活点击页面的'爱心'效果，默认激活.
@@ -314,8 +322,8 @@ googleAnalytics:
 # 添加 baidu Analytics 配置
 baiduAnalytics:
   enable: false
-  id: 
-  
+  id:
+
 # 百度搜索资源平台提交链接
 baiduPush: true
 
@@ -335,7 +343,7 @@ libs:
     jqcloud: /libs/jqcloud/jqcloud.css
     tocbot: /libs/tocbot/tocbot.css
   js:
-    jquery: /libs/jquery/jquery-2.2.0.min.js
+    jquery: /libs/jquery/jquery.min.js
     materialize: /libs/materialize/materialize.min.js # 1.0.0
     masonry: /libs/masonry/masonry.pkgd.min.js # v4.0.0
     aos: /libs/aos/aos.js
@@ -353,12 +361,13 @@ libs:
     tocbot: /libs/tocbot/tocbot.min.js
     canvas_nest: /libs/background/canvas-nest.js
     ribbon: /libs/background/ribbon.min.js
+    ribbonRefresh: /libs/background/ribbon-refresh.min.js
     ribbon_dynamic: /libs/background/ribbon-dynamic.js
     instantpage: /libs/instantpage/instantpage.js
 
 # The post featured images that needs to be displayed when there is no image.
 # 无文章特色图片时需要显示的文章特色图片.
-featureImages: 
+featureImages:
 - /medias/featureimages/0.jpg
 - /medias/featureimages/1.jpg
 - /medias/featureimages/2.jpg
@@ -406,17 +415,17 @@ featureImages:
 reprint:
   enable: true # whether enable reprint section 是否启用“转载规则限定模块”
   default: cc_by
-  
-# DaoVoice online contact 
-daovoice: 
+
+# DaoVoice online contact
+daovoice:
   enable: true
   app_id:
-  
-# Tidio online contact 
+
+# Tidio online contact
 tidio:
   enable: false
-  public_key: 
- 
+  public_key:
+
 #背景canvas-nest
 canvas_nest:
   enable: false
@@ -432,7 +441,7 @@ ribbon:
   size: 150 # 彩带大小, 默认: 90.
   alpha: 0.6 # 彩带透明度 (0 ~ 1), 默认: 0.6.
   zIndex: -1 # 背景的z-index属性，css属性用于控制所在层的位置, 默认: -1.
-  click_to_change: false  # 设置是否每次点击都更换彩带.
+  clickChange: false  # 设置是否每次点击都更换彩带.
 
 # 背景动态彩带.
 ribbon_dynamic:
@@ -448,10 +457,10 @@ sharejs:
 addthis:
   enable: false
   pubid:  #前往https://www.addthis.com/获取
-  
+
 # 打字效果副标题.
 # 如果有符号 ‘ ，请在 ’ 前面加上 \
-subtitle: 
+subtitle:
   enable: true
   loop: true # 是否循环
   showCursor: true # 是否显示光标
@@ -460,21 +469,34 @@ subtitle:
   backSpeed: 50 # 删除速度
   sub1: "我太菜了, 大佬们求罩."
   sub2: "With the low level of hard work of most people, there is no chance to fight for talent."
-  
+
 # 手机二级菜单.
 navMenu:
   mleft: false # 二级侧栏子菜单是否对齐左边
   bgColor: " " # 二级侧栏子菜单背景颜色,留空即为全局背景色
 
 # 网页预加载.
-instantpage: true
+instantpage:
+  enable: true
 
 # banner 是否每日切换.
 # 若为 false, 则 banner 默认为 /medias/banner/0.jpg
-banner: true
+banner:
+  enable: true
 
 #ICP备案信息尾部显示
 icp:
   enable: false
   url: # 备案链接
   text: # 备案信息
+
+# CDN访问加速
+# 第一次使用本功能，一定要先配置url，再`hexo cl && hexo g && hexo d`部署到GitHub的仓库，注意！必须是GitHub的仓库！
+# 如果必须要使用国内的coding或者gitee，可以采用双部署，同时将网站部署到两个仓库（其中一个必须是GitHub的仓库）
+# URL配置规则（例子如下）： https://cdn.jsdelivr.net/gh/你的GitHub用户名/你的仓库名
+# 如果想关闭此功能，将 url地址 注释或删除即可！
+#
+# 注：配置了此项，就代表着本地调试的时候，网站依然会去GitHub请求资源（原来的资源），本地调试的时候记得将 此项配置 注释或者删除掉
+# 更多关于访问速度优化，请查看：https://blog.sky03.cn/posts/42790.html
+jsDelivr:
+  url: # https://cdn.jsdelivr.net/gh/skyls03/skyls03.github.io
