@@ -1,6 +1,6 @@
 ---
 title: vim使用心得
-date: 2019-03-11 15:33:11
+date: 2019-11-08 15:33:11
 description: tabris的vim使用心得
 toc: true
 author: tabris

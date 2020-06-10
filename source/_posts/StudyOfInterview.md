@@ -27,7 +27,7 @@ tags:
 
 ### a
 
-####  [√][荷兰国旗问题](http://acm.nyist.edu.cn/JudgeOnline/problem.php?pid=268)
+####  [√] [荷兰国旗问题](http://acm.nyist.edu.cn/JudgeOnline/problem.php?pid=268)
 
  噗 , 被高大上的名字给吓到了,其实就是简单的C语言入门题.
 
