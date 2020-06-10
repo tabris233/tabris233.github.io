@@ -1,7 +1,7 @@
 ---
 title: 主流应用换源or镜像加速
 date: 2019-4-14 10:59:03
-description: ["应用换源"]
+description: [应用换源]
 toc: true
 author: tabris
 # 图片推荐使用图床(腾讯云、七牛云、又拍云等)来做图片的路径.如:http://xxx.com/xxx.jpg
@@ -12,7 +12,7 @@ top: true
 password: 
 # 本文章是否开启mathjax，且需要在主题的_config.yml文件中也需要开启才行
 mathjax: false
-summary: 
+summary:  "asdfasdf"
 categories: 实用技能
 tags:
   - linux
