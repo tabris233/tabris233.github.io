@@ -10,44 +10,8 @@
     
     
     <url>
-        <loc>http://blog.tabris.top/about/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>http://blog.tabris.top/categories/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>http://blog.tabris.top/examples/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
-        <loc>http://blog.tabris.top/faqs/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    
-    
-    <url>
         <loc>http://blog.tabris.top/friends/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
+        <lastmod>2021-04-01T04:33:12.380Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -56,7 +20,43 @@
     
     <url>
         <loc>http://blog.tabris.top/tags/</loc>
-        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
+        <lastmod>2021-04-01T04:33:12.380Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://blog.tabris.top/about/</loc>
+        <lastmod>2021-04-01T04:33:12.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://blog.tabris.top/categories/</loc>
+        <lastmod>2021-04-01T04:33:12.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://blog.tabris.top/examples/</loc>
+        <lastmod>2021-04-01T04:33:12.376Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    
+    
+    <url>
+        <loc>http://blog.tabris.top/faqs/</loc>
+        <lastmod>2021-04-01T04:33:12.376Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
