@@ -2,7 +2,7 @@
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>http://tabris.top/</loc>
+        <loc>http://blog.tabris.top/</loc>
         <changefreq>daily</changefreq>
         <priority>1</priority>
     </url>
@@ -10,8 +10,8 @@
     
     
     <url>
-        <loc>http://tabris.top/faqs/</loc>
-        <lastmod>2021-04-01T03:24:16.065Z</lastmod>
+        <loc>http://blog.tabris.top/about/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -19,8 +19,8 @@
     
     
     <url>
-        <loc>http://tabris.top/friends/</loc>
-        <lastmod>2021-04-01T03:24:16.065Z</lastmod>
+        <loc>http://blog.tabris.top/categories/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -28,8 +28,8 @@
     
     
     <url>
-        <loc>http://tabris.top/tags/</loc>
-        <lastmod>2021-04-01T03:24:16.065Z</lastmod>
+        <loc>http://blog.tabris.top/examples/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -37,8 +37,8 @@
     
     
     <url>
-        <loc>http://tabris.top/about/</loc>
-        <lastmod>2021-04-01T03:24:16.061Z</lastmod>
+        <loc>http://blog.tabris.top/faqs/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -46,8 +46,8 @@
     
     
     <url>
-        <loc>http://tabris.top/categories/</loc>
-        <lastmod>2021-04-01T03:24:16.061Z</lastmod>
+        <loc>http://blog.tabris.top/friends/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -55,8 +55,8 @@
     
     
     <url>
-        <loc>http://tabris.top/examples/</loc>
-        <lastmod>2021-04-01T03:24:16.061Z</lastmod>
+        <loc>http://blog.tabris.top/tags/</loc>
+        <lastmod>2021-04-01T04:05:17.774Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
